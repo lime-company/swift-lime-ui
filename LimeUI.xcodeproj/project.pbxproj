@@ -75,6 +75,7 @@
 				BF094702202C613D002F76A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		BF0946D4202C5C5F002F76A6 /* Products */ = {
 			isa = PBXGroup;

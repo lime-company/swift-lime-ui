@@ -17,61 +17,61 @@
 import UIKit
 
 open class EmbeddedViewsBaseTransition: EmbeddedViewsTransition {
-	
-	weak var current: UIView?
-	weak var next: UIView?
+    
+    weak var current: UIView?
+    weak var next: UIView?
 
-	var additionalPrepareBlock: (()->Void)?
-	var additionalExecuteBlock: (()->Void)?
-	var isCancel = false
-	
-	open func prepare(current: UIView?, next: UIView?) {
-		self.current = current
-		self.next = next
-		self.additionalPrepareBlock?()
-	}
-	
-	open func execute(callback: @escaping (Bool) -> Void) {
-		self.additionalExecuteBlock?()
-		callback(true)
-	}
-	
-	open func cancel() {
-		self.isCancel = true
-	}
+    var additionalPrepareBlock: (()->Void)?
+    var additionalExecuteBlock: (()->Void)?
+    var isCancel = false
+    
+    open func prepare(current: UIView?, next: UIView?) {
+        self.current = current
+        self.next = next
+        self.additionalPrepareBlock?()
+    }
+    
+    open func execute(callback: @escaping (Bool) -> Void) {
+        self.additionalExecuteBlock?()
+        callback(true)
+    }
+    
+    open func cancel() {
+        self.isCancel = true
+    }
 }
 
 open class InstantViewsSwitchTransition: EmbeddedViewsBaseTransition {
-	
-	open override func execute(callback: @escaping (Bool) -> Void) {
-		super.current?.alpha = 0
-		super.next?.alpha = 1
-		super.additionalExecuteBlock?()
-		callback(true)
-	}
+    
+    open override func execute(callback: @escaping (Bool) -> Void) {
+        super.current?.alpha = 0
+        super.next?.alpha = 1
+        super.additionalExecuteBlock?()
+        callback(true)
+    }
 }
 
 open class CrossfadeViewsTransition: EmbeddedViewsBaseTransition {
-	
-	let duration: TimeInterval
-	
-	public init(duration: TimeInterval = 0.3) {
-		self.duration = duration
-	}
-	
-	open override func prepare(current: UIView?, next: UIView?) {
-		super.prepare(current: current, next: next)
-		current?.alpha = 1
-		next?.alpha = 0
-	}
-	
-	open override func execute(callback: @escaping (Bool) -> Void) {
-		UIView.animate(withDuration: self.duration, delay: 0, options: .curveEaseInOut, animations: {
-			super.current?.alpha = 0
-			super.next?.alpha = 1
-			super.additionalExecuteBlock?()
-		}) { (completed) in
-			callback(!self.isCancel)
-		}
-	}
+    
+    let duration: TimeInterval
+    
+    public init(duration: TimeInterval = 0.3) {
+        self.duration = duration
+    }
+    
+    open override func prepare(current: UIView?, next: UIView?) {
+        super.prepare(current: current, next: next)
+        current?.alpha = 1
+        next?.alpha = 0
+    }
+    
+    open override func execute(callback: @escaping (Bool) -> Void) {
+        UIView.animate(withDuration: self.duration, delay: 0, options: .curveEaseInOut, animations: {
+            super.current?.alpha = 0
+            super.next?.alpha = 1
+            super.additionalExecuteBlock?()
+        }) { (completed) in
+            callback(!self.isCancel)
+        }
+    }
 }

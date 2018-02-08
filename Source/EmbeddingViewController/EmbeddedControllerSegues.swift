@@ -18,84 +18,84 @@ import UIKit
 
 /// An Instant switch from source to destination controller.
 public class EmbeddedControllerSwitchSegue: UIStoryboardSegue {
-	override public func perform() {
-		guard let controller = self.source.embeddingViewController else {
-			return
-		}
-		controller.embed(controller: self.destination, transition: InstantViewsSwitchTransition())
-	}
+    override public func perform() {
+        guard let controller = self.source.embeddingViewController else {
+            return
+        }
+        controller.embed(controller: self.destination, transition: InstantViewsSwitchTransition())
+    }
 }
 
 /// A crossfade between source and destination controller.
 public class EmbeddedControllerCrossfadeSegue: UIStoryboardSegue {
-	override public func perform() {
-		guard let controller = self.source.embeddingViewController else {
-			return
-		}
-		controller.embed(controller: self.destination, transition: CrossfadeViewsTransition())
-	}
+    override public func perform() {
+        guard let controller = self.source.embeddingViewController else {
+            return
+        }
+        controller.embed(controller: self.destination, transition: CrossfadeViewsTransition())
+    }
 }
 
 
 /// An universal segue for switching embedded controllers. You can adjust the presentation mode
 /// in `prepare(for segue:sender:)` method.
 public class ChangeEmbeddedControllerSegue: UIStoryboardSegue {
-	
-	/// The `TransitionMode` enumeration defines supported transition types
-	public enum TransitionMode {
-		/// The switch will be performed instantly
-		case instant
-		/// The crossfade effect will be used for transition
-		case crossfade
-	}
-	
-	/// The `Configuration` class affects how the embedded controllers transition will be performed.
-	public class Configuration {
-		/// Defines transition mode
-		public let transitionMode: TransitionMode
-		/// Duration for animation, applied only when transition mode is animated
-		public let animationDuration: TimeInterval
-		/// You can use this property for passing additional data between `performSegue()` and `prepare(for...)`
-		/// methods.
-		public let sender: Any?
-		
-		/// An optional block called before the animation is executed.
-		public var prepareAdditionalAnimations: (()->Void)?
-		
-		/// An optional block called inside the animation block.
-		public var executeAdditionalAnimations: (()->Void)?
-		
-		/// Designated initializer
-		public init(_ transitionMode: TransitionMode = .instant, animationDuration: TimeInterval = 0.35, sender: Any? = nil) {
-			self.transitionMode = transitionMode
-			self.animationDuration = animationDuration
-			self.sender = sender
-		}
-	}
-	
-	/// A configuration for segue execution.
-	public var configuration: Configuration?
-	
-	/// Performs execution of the segue
-	override public func perform() {
-		guard let controller = self.source.embeddingViewController else {
-			return
-		}
-		
-		// Prepare views transition object
-		let mode = self.configuration?.transitionMode ?? .instant
-		let duration = self.configuration?.animationDuration ?? 0.35
-		var viewsTransition: EmbeddedViewsBaseTransition
-		switch mode {
-		case .instant:
-			viewsTransition = InstantViewsSwitchTransition()
-		case .crossfade:
-			viewsTransition = CrossfadeViewsTransition(duration: duration)
-		}
-		viewsTransition.additionalPrepareBlock = self.configuration?.prepareAdditionalAnimations
-		viewsTransition.additionalExecuteBlock = self.configuration?.executeAdditionalAnimations
-		
-		// Execute that transition
-		controller.embed(controller: self.destination, transition: viewsTransition)
-	}
+    
+    /// The `TransitionMode` enumeration defines supported transition types
+    public enum TransitionMode {
+        /// The switch will be performed instantly
+        case instant
+        /// The crossfade effect will be used for transition
+        case crossfade
+    }
+    
+    /// The `Configuration` class affects how the embedded controllers transition will be performed.
+    public class Configuration {
+        /// Defines transition mode
+        public let transitionMode: TransitionMode
+        /// Duration for animation, applied only when transition mode is animated
+        public let animationDuration: TimeInterval
+        /// You can use this property for passing additional data between `performSegue()` and `prepare(for...)`
+        /// methods.
+        public let sender: Any?
+        
+        /// An optional block called before the animation is executed.
+        public var prepareAdditionalAnimations: (()->Void)?
+        
+        /// An optional block called inside the animation block.
+        public var executeAdditionalAnimations: (()->Void)?
+        
+        /// Designated initializer
+        public init(_ transitionMode: TransitionMode = .instant, animationDuration: TimeInterval = 0.35, sender: Any? = nil) {
+            self.transitionMode = transitionMode
+            self.animationDuration = animationDuration
+            self.sender = sender
+        }
+    }
+    
+    /// A configuration for segue execution.
+    public var configuration: Configuration?
+    
+    /// Performs execution of the segue
+    override public func perform() {
+        guard let controller = self.source.embeddingViewController else {
+            return
+        }
+        
+        // Prepare views transition object
+        let mode = self.configuration?.transitionMode ?? .instant
+        let duration = self.configuration?.animationDuration ?? 0.35
+        var viewsTransition: EmbeddedViewsBaseTransition
+        switch mode {
+        case .instant:
+            viewsTransition = InstantViewsSwitchTransition()
+        case .crossfade:
+            viewsTransition = CrossfadeViewsTransition(duration: duration)
+        }
+        viewsTransition.additionalPrepareBlock = self.configuration?.prepareAdditionalAnimations
+        viewsTransition.additionalExecuteBlock = self.configuration?.executeAdditionalAnimations
+        
+        // Execute that transition
+        controller.embed(controller: self.destination, transition: viewsTransition)
+    }
 }
