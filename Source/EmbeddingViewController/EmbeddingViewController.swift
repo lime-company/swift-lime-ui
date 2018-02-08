@@ -1,5 +1,5 @@
 //
-// Copyright 2017 Lime - HighTech Solutions s.r.o.
+// Copyright 2018 Lime - HighTech Solutions s.r.o.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
 
 import UIKit
 
-/// The `EmbeddedViewsTransition` protocol is an abstract interface which allows implement
-/// transition between two views, belonging to current and next embedded controller.
+/// The `EmbeddedViewsTransition` protocol defines interface which allows implement
+/// transition between two views, belonging to current and next embedded view controller.
 public protocol EmbeddedViewsTransition : class {
     
     /// Called before the transaction begins. If the next view is valid, then it's
@@ -33,9 +33,48 @@ public protocol EmbeddedViewsTransition : class {
     func cancel()
 }
 
+
 /// The `EmbeddingViewController` implements an easy way for embedding another controller
-/// as a sub-controller.
-open class EmbeddingViewController: UIViewController {
+/// as a child-controller.
+open class EmbeddingViewController: BaseLocalizableViewController {
+    
+    // MARK: - Controllers embedding
+    
+    /// Removes currently embedded controller from this controller.
+    public func removeEmbeddedController(transition: EmbeddedViewsTransition? = nil, completion:(()->Void)? = nil) {
+        let tr = transition ?? InstantSwitchViewsTransition()
+        self.doSwitch(nil, transition: tr, completion: completion)
+    }
+    
+    /// Embeds a new controller into this controller.
+    public func embed(controller: UIViewController, transition: EmbeddedViewsTransition? = nil, completion:(()->Void)? = nil) {
+        let tr = transition ?? InstantSwitchViewsTransition()
+        self.doSwitch(controller, transition: tr, completion: completion)
+    }
+    
+    // MARK: - Initial configuration
+    
+    /// An identifier for storyboard seque, which will be instantiated together with this instance of EmbeddingViewController.
+    /// You can change this value in storyboard editor's inspector, or with using `User defined runtime attributes`.
+    @IBInspectable @objc public var initialStoryboardSegueIdentifier: String?
+    
+    /// An identifier for storyboard scene, which will be instantiated together with this controller. You have to
+    /// place the scene to the same storyboard as this instance of EmbeddingViewController.
+    /// You can change this value in storyboard editor's inspector, or with using `User defined runtime attributes`.
+    @IBInspectable @objc public var initialStoryboardControllerIdentifier: String?
+    
+    /// Private method will try to instantiate first scene, when this controller is created.
+    private func instantiateFirstEmbeddedController() {
+        // at first, we will try to perform an initial segue
+        // then the controller may be instantiated by its storyboard identifier
+        if let identifier = self.initialStoryboardSegueIdentifier {
+            self.performSegue(withIdentifier: identifier, sender: nil)
+        } else if let identifier = self.initialStoryboardControllerIdentifier {
+            self.storyboard?.instantiateViewController(withIdentifier: identifier)
+        }
+        self.initialStoryboardControllerIdentifier = nil
+        self.initialStoryboardSegueIdentifier = nil
+    }
     
     // MARK: - View's lifecycle
     
@@ -43,6 +82,10 @@ open class EmbeddingViewController: UIViewController {
     /// then the self.view is assigned.
     @IBOutlet public weak var embeddingView: UIView!
     
+    /// In `viewDidLoad` method, following operations are performed:
+    ///  - If `self.embeddingView` is not set, then `self.view` is assigned to the property.
+    ///  - Controller will try to embed a first controller, depending on `initialStoryboardSegueIdentifier`
+    ///    or `initialStoryboardControllerIdentifier` properties.
     open override func viewDidLoad() {
         super.viewDidLoad()
         // Attach embedding view to controller's view, if the value is not set
@@ -52,26 +95,16 @@ open class EmbeddingViewController: UIViewController {
         // Instantiate first controller
         self.instantiateFirstEmbeddedController()
     }
-    
-    // MARK: - Controllers embedding
-    
-    /// Currently embedded view controller.
-    weak var embeddedViewController: UIViewController?
-    weak var pendingTransition: EmbeddedViewsTransition?
-    
-    /// Removes currently embedded controller from this controller.
-    public func removeEmbeddedController(transition: EmbeddedViewsTransition? = nil, completion:(()->Void)? = nil) {
-        let tr = transition ?? InstantViewsSwitchTransition()
-        self.doSwitch(nil, transition: tr, completion: completion)
-    }
-    
-    /// Embeds a new controller into this controller.
-    public func embed(controller: UIViewController, transition: EmbeddedViewsTransition? = nil, completion:(()->Void)? = nil) {
-        let tr = transition ?? InstantViewsSwitchTransition()
-        self.doSwitch(controller, transition: tr, completion: completion)
-    }
+
     
     // MARK: - Private methods
+    
+    /// Currently embedded view controller.
+    private weak var embeddedViewController: UIViewController?
+    
+    /// Transaction currently in progress
+    private weak var pendingTransition: EmbeddedViewsTransition?
+    
     
     private func doSwitch(_ nextController: UIViewController?, transition: EmbeddedViewsTransition, completion:(()->Void)?) {
         // Mark possible pending transition as cancelled and store the next one
@@ -129,33 +162,10 @@ open class EmbeddingViewController: UIViewController {
             }
         }
     }
-    
-    // MARK: - Initial configuration
-    
-    /// An identifier for storyboard seque, which will be instantiated together with this EmbeddingViewController.
-    /// You can change this value via the 'User defined runtime attributs', directly from storyboard editor.
-    @objc public var initialStoryboardSegueIdentifier: String?
-    /// An identifier for storyboard scene, which will be instantiated together with this controller. You have to
-    /// place the scene to the same storyboard as this EmbeddingViewController.
-    /// You can change this value via the 'User defined runtime attributs', directly from storyboard editor.
-    @objc public var initialStoryboardControllerIdentifier: String?
-    
-    /// Private method will instantiate first scene, when this controller is created.
-    private func instantiateFirstEmbeddedController() {
-        // at first, we will try to perform an initial segue
-        // then the controller may be instantiated by its storyboard identifier
-        if let identifier = self.initialStoryboardSegueIdentifier {
-            self.performSegue(withIdentifier: identifier, sender: nil)
-        } else if let identifier = self.initialStoryboardControllerIdentifier {
-            self.storyboard?.instantiateViewController(withIdentifier: identifier)
-        }
-        self.initialStoryboardControllerIdentifier = nil
-        self.initialStoryboardSegueIdentifier = nil
-    }
-
 }
 
 public extension UIViewController {
+    
     /// If this controller is managed by the `EmbeddingViewController` then returns its instance, or nil if there's no such
     /// controller in parent controllers hierarchy.
     public var embeddingViewController: EmbeddingViewController? {

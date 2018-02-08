@@ -1,5 +1,5 @@
 //
-// Copyright 2017 Lime - HighTech Solutions s.r.o.
+// Copyright 2018 Lime - HighTech Solutions s.r.o.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -15,27 +15,7 @@
 //
 
 import UIKit
-
-/// An Instant switch from source to destination controller.
-public class EmbeddedControllerSwitchSegue: UIStoryboardSegue {
-    override public func perform() {
-        guard let controller = self.source.embeddingViewController else {
-            return
-        }
-        controller.embed(controller: self.destination, transition: InstantViewsSwitchTransition())
-    }
-}
-
-/// A crossfade between source and destination controller.
-public class EmbeddedControllerCrossfadeSegue: UIStoryboardSegue {
-    override public func perform() {
-        guard let controller = self.source.embeddingViewController else {
-            return
-        }
-        controller.embed(controller: self.destination, transition: CrossfadeViewsTransition())
-    }
-}
-
+import LimeCore
 
 /// An universal segue for switching embedded controllers. You can adjust the presentation mode
 /// in `prepare(for segue:sender:)` method.
@@ -51,10 +31,13 @@ public class ChangeEmbeddedControllerSegue: UIStoryboardSegue {
     
     /// The `Configuration` class affects how the embedded controllers transition will be performed.
     public class Configuration {
+        
         /// Defines transition mode
         public let transitionMode: TransitionMode
+        
         /// Duration for animation, applied only when transition mode is animated
         public let animationDuration: TimeInterval
+        
         /// You can use this property for passing additional data between `performSegue()` and `prepare(for...)`
         /// methods.
         public let sender: Any?
@@ -79,6 +62,7 @@ public class ChangeEmbeddedControllerSegue: UIStoryboardSegue {
     /// Performs execution of the segue
     override public func perform() {
         guard let controller = self.source.embeddingViewController else {
+            D.print("ChangeEmbeddedControllerSegue: Cannot perform segue due to missing EmbeddingViewController.")
             return
         }
         
@@ -88,7 +72,7 @@ public class ChangeEmbeddedControllerSegue: UIStoryboardSegue {
         var viewsTransition: EmbeddedViewsBaseTransition
         switch mode {
         case .instant:
-            viewsTransition = InstantViewsSwitchTransition()
+            viewsTransition = InstantSwitchViewsTransition()
         case .crossfade:
             viewsTransition = CrossfadeViewsTransition(duration: duration)
         }

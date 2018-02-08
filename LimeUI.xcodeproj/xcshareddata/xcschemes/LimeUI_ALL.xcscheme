@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF0946D2202C5C5F002F76A6"
-               BuildableName = "LimeUI.framework"
-               BlueprintName = "LimeUI"
+               BlueprintIdentifier = "BFA90245202C843600127A29"
+               BuildableName = "LimeUI_ALL.framework"
+               BlueprintName = "LimeUI_ALL"
                ReferencedContainer = "container:LimeUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,6 +30,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BF0946D2202C5C5F002F76A6"
+            BuildableName = "LimeUI_Base.framework"
+            BlueprintName = "LimeUI_Base"
+            ReferencedContainer = "container:LimeUI.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -44,15 +53,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF0946D2202C5C5F002F76A6"
-            BuildableName = "LimeUI.framework"
-            BlueprintName = "LimeUI"
-            ReferencedContainer = "container:LimeUI.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -62,15 +62,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF0946D2202C5C5F002F76A6"
-            BuildableName = "LimeUI.framework"
-            BlueprintName = "LimeUI"
-            ReferencedContainer = "container:LimeUI.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
