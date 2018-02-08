@@ -12,5 +12,17 @@ Pod::Spec.new do |s|
   s.swift_version = '4.0'
   s.ios.deployment_target = '8.0'
   # Sources
-  s.source_files = 'Source/*.swift'
+  s.dependency 'LimeLocalization'
+  s.default_subspec = 'Base'
+  
+  # 'Base' subspec
+  s.subspec 'Base' do |sub|
+    sub.source_files = 'Source/Base/*.swift'
+  end
+  
+  # 'Embedding' subspec
+  s.subspec 'EmbeddingViewController' do |sub|
+    sub.source_files = 'Source/EmbeddingViewController/*.swift'
+  end
+
 end
