@@ -7,34 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF0946E3202C5CF3002F76A6 /* LimeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0946E1202C5CF3002F76A6 /* LimeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF094703202C613D002F76A6 /* LimeLocalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0946FD202C6120002F76A6 /* LimeLocalization.framework */; };
 		BFA9024B202C843600127A29 /* EmbeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0946F1202C60C7002F76A6 /* EmbeddingViewController.swift */; };
 		BFA9024C202C843600127A29 /* BaseLocalizableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF094704202C61CC002F76A6 /* BaseLocalizableViewController.swift */; };
 		BFA9024E202C843600127A29 /* LimeLocalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0946FD202C6120002F76A6 /* LimeLocalization.framework */; };
 		BFA90250202C843600127A29 /* LimeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0946E1202C5CF3002F76A6 /* LimeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFA9025D202C849200127A29 /* EmbeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0946F1202C60C7002F76A6 /* EmbeddingViewController.swift */; };
-		BFA90260202C849200127A29 /* LimeLocalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0946FD202C6120002F76A6 /* LimeLocalization.framework */; };
-		BFA90262202C849200127A29 /* LimeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0946E1202C5CF3002F76A6 /* LimeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFA90272202C849E00127A29 /* LimeLocalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0946FD202C6120002F76A6 /* LimeLocalization.framework */; };
-		BFA90274202C849E00127A29 /* LimeUI.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0946E1202C5CF3002F76A6 /* LimeUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFA9027B202C852800127A29 /* BaseLocalizableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF094704202C61CC002F76A6 /* BaseLocalizableViewController.swift */; };
 		BFA9027D202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9027C202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift */; };
 		BFA9027F202C8AD400127A29 /* InstantSwitchViewsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9027E202C8AD400127A29 /* InstantSwitchViewsTransition.swift */; };
 		BFA90281202C8B0700127A29 /* CrossfadeViewsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90280202C8B0700127A29 /* CrossfadeViewsTransition.swift */; };
-		BFA90284202C8C6C00127A29 /* EmbeddedViewsBaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9027C202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift */; };
-		BFA90285202C8C6F00127A29 /* InstantSwitchViewsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9027E202C8AD400127A29 /* InstantSwitchViewsTransition.swift */; };
-		BFA90286202C8C7300127A29 /* CrossfadeViewsTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90280202C8B0700127A29 /* CrossfadeViewsTransition.swift */; };
 		BFA90288202C8C9400127A29 /* ChangeEmbeddedControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90287202C8C9400127A29 /* ChangeEmbeddedControllerSegue.swift */; };
 		BFA9028A202C8D1A00127A29 /* LimeImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90289202C8D1A00127A29 /* LimeImports.swift */; };
-		BFA9028B202C8D3B00127A29 /* LimeImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90289202C8D1A00127A29 /* LimeImports.swift */; };
-		BFA9028C202C8D3E00127A29 /* LimeImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90289202C8D1A00127A29 /* LimeImports.swift */; };
-		BFA9028D202C906600127A29 /* LimeImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90289202C8D1A00127A29 /* LimeImports.swift */; };
 		BFA9028F202C90C200127A29 /* EmbeddedControllerSwitchSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9028E202C90C200127A29 /* EmbeddedControllerSwitchSegue.swift */; };
 		BFA90291202C90F500127A29 /* EmbeddedControllerCrossfadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90290202C90F500127A29 /* EmbeddedControllerCrossfadeSegue.swift */; };
-		BFA90292202C910C00127A29 /* EmbeddedControllerSwitchSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA9028E202C90C200127A29 /* EmbeddedControllerSwitchSegue.swift */; };
-		BFA90293202C910C00127A29 /* EmbeddedControllerCrossfadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90290202C90F500127A29 /* EmbeddedControllerCrossfadeSegue.swift */; };
-		BFA90294202C910C00127A29 /* ChangeEmbeddedControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90287202C8C9400127A29 /* ChangeEmbeddedControllerSegue.swift */; };
+		BFA90299202C951C00127A29 /* CTAAlternativePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90295202C951B00127A29 /* CTAAlternativePageViewController.swift */; };
+		BFA9029A202C951C00127A29 /* CTAWizardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90296202C951B00127A29 /* CTAWizardPageViewController.swift */; };
+		BFA9029B202C951C00127A29 /* WizardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90297202C951B00127A29 /* WizardPageViewController.swift */; };
+		BFA9029C202C951C00127A29 /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA90298202C951C00127A29 /* WizardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,28 +39,7 @@
 			remoteGlobalIDString = BF08C2242024685C00EC2529;
 			remoteInfo = "LimeLocalization watchOS";
 		};
-		BF094700202C612D002F76A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF0946F6202C611F002F76A6 /* LimeLocalization.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BF08C20A202464B600EC2529;
-			remoteInfo = "LimeLocalization iOS";
-		};
 		BFA90247202C843600127A29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF0946F6202C611F002F76A6 /* LimeLocalization.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BF08C20A202464B600EC2529;
-			remoteInfo = "LimeLocalization iOS";
-		};
-		BFA90259202C849200127A29 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF0946F6202C611F002F76A6 /* LimeLocalization.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BF08C20A202464B600EC2529;
-			remoteInfo = "LimeLocalization iOS";
-		};
-		BFA9026B202C849E00127A29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF0946F6202C611F002F76A6 /* LimeLocalization.xcodeproj */;
 			proxyType = 1;
@@ -83,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF0946D3202C5C5F002F76A6 /* LimeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0946E0202C5CF3002F76A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		BF0946E1202C5CF3002F76A6 /* LimeUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LimeUI.h; path = Source/LimeUI.h; sourceTree = "<group>"; };
 		BF0946E7202C5E3A002F76A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -92,9 +57,8 @@
 		BF0946F1202C60C7002F76A6 /* EmbeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbeddingViewController.swift; sourceTree = "<group>"; };
 		BF0946F6202C611F002F76A6 /* LimeLocalization.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LimeLocalization.xcodeproj; path = "Carthage/Checkouts/swift-lime-localization/LimeLocalization.xcodeproj"; sourceTree = "<group>"; };
 		BF094704202C61CC002F76A6 /* BaseLocalizableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalizableViewController.swift; sourceTree = "<group>"; };
+		BF8CF3F42031939E002A6B6E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		BFA90255202C843600127A29 /* LimeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFA90267202C849200127A29 /* LimeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFA90279202C849E00127A29 /* LimeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA9027C202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedViewsBaseTransition.swift; sourceTree = "<group>"; };
 		BFA9027E202C8AD400127A29 /* InstantSwitchViewsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantSwitchViewsTransition.swift; sourceTree = "<group>"; };
 		BFA90280202C8B0700127A29 /* CrossfadeViewsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossfadeViewsTransition.swift; sourceTree = "<group>"; };
@@ -102,38 +66,18 @@
 		BFA90289202C8D1A00127A29 /* LimeImports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimeImports.swift; sourceTree = "<group>"; };
 		BFA9028E202C90C200127A29 /* EmbeddedControllerSwitchSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedControllerSwitchSegue.swift; sourceTree = "<group>"; };
 		BFA90290202C90F500127A29 /* EmbeddedControllerCrossfadeSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedControllerCrossfadeSegue.swift; sourceTree = "<group>"; };
+		BFA90295202C951B00127A29 /* CTAAlternativePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTAAlternativePageViewController.swift; sourceTree = "<group>"; };
+		BFA90296202C951B00127A29 /* CTAWizardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTAWizardPageViewController.swift; sourceTree = "<group>"; };
+		BFA90297202C951B00127A29 /* WizardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardPageViewController.swift; sourceTree = "<group>"; };
+		BFA90298202C951C00127A29 /* WizardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF0946CF202C5C5F002F76A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF094703202C613D002F76A6 /* LimeLocalization.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFA9024D202C843600127A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BFA9024E202C843600127A29 /* LimeLocalization.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA9025F202C849200127A29 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA90260202C849200127A29 /* LimeLocalization.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA90271202C849E00127A29 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA90272202C849E00127A29 /* LimeLocalization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,10 +99,7 @@
 		BF0946D4202C5C5F002F76A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF0946D3202C5C5F002F76A6 /* LimeUI.framework */,
 				BFA90255202C843600127A29 /* LimeUI.framework */,
-				BFA90267202C849200127A29 /* LimeUI.framework */,
-				BFA90279202C849E00127A29 /* LimeUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +121,7 @@
 				BF0946E7202C5E3A002F76A6 /* README.md */,
 				BF0946E0202C5CF3002F76A6 /* Info.plist */,
 				BF0946E1202C5CF3002F76A6 /* LimeUI.h */,
+				BF8CF3F42031939E002A6B6E /* Cartfile */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +157,10 @@
 		BF0946EE202C6098002F76A6 /* WizardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BFA90295202C951B00127A29 /* CTAAlternativePageViewController.swift */,
+				BFA90296202C951B00127A29 /* CTAWizardPageViewController.swift */,
+				BFA90297202C951B00127A29 /* WizardPageViewController.swift */,
+				BFA90298202C951C00127A29 /* WizardViewController.swift */,
 			);
 			path = WizardViewController;
 			sourceTree = "<group>";
@@ -266,14 +212,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BF0946D0202C5C5F002F76A6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF0946E3202C5CF3002F76A6 /* LimeUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFA9024F202C843600127A29 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,47 +220,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFA90261202C849200127A29 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA90262202C849200127A29 /* LimeUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA90273202C849E00127A29 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA90274202C849E00127A29 /* LimeUI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BF0946D2202C5C5F002F76A6 /* LimeUI_Base */ = {
+		BFA90245202C843600127A29 /* LimeUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF0946DB202C5C5F002F76A6 /* Build configuration list for PBXNativeTarget "LimeUI_Base" */;
-			buildPhases = (
-				BF0946CE202C5C5F002F76A6 /* Sources */,
-				BF0946CF202C5C5F002F76A6 /* Frameworks */,
-				BF0946D0202C5C5F002F76A6 /* Headers */,
-				BF0946D1202C5C5F002F76A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BF094701202C612D002F76A6 /* PBXTargetDependency */,
-			);
-			name = LimeUI_Base;
-			productName = LimeUI;
-			productReference = BF0946D3202C5C5F002F76A6 /* LimeUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BFA90245202C843600127A29 /* LimeUI_ALL */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFA90252202C843600127A29 /* Build configuration list for PBXNativeTarget "LimeUI_ALL" */;
+			buildConfigurationList = BFA90252202C843600127A29 /* Build configuration list for PBXNativeTarget "LimeUI" */;
 			buildPhases = (
 				BFA90248202C843600127A29 /* Sources */,
 				BFA9024D202C843600127A29 /* Frameworks */,
@@ -334,47 +237,9 @@
 			dependencies = (
 				BFA90246202C843600127A29 /* PBXTargetDependency */,
 			);
-			name = LimeUI_ALL;
+			name = LimeUI;
 			productName = LimeUI;
 			productReference = BFA90255202C843600127A29 /* LimeUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BFA90257202C849200127A29 /* LimeUI_Embedding */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFA90264202C849200127A29 /* Build configuration list for PBXNativeTarget "LimeUI_Embedding" */;
-			buildPhases = (
-				BFA9025A202C849200127A29 /* Sources */,
-				BFA9025F202C849200127A29 /* Frameworks */,
-				BFA90261202C849200127A29 /* Headers */,
-				BFA90263202C849200127A29 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFA90258202C849200127A29 /* PBXTargetDependency */,
-			);
-			name = LimeUI_Embedding;
-			productName = LimeUI;
-			productReference = BFA90267202C849200127A29 /* LimeUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BFA90269202C849E00127A29 /* LimeUI_Wizard */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFA90276202C849E00127A29 /* Build configuration list for PBXNativeTarget "LimeUI_Wizard" */;
-			buildPhases = (
-				BFA9026C202C849E00127A29 /* Sources */,
-				BFA90271202C849E00127A29 /* Frameworks */,
-				BFA90273202C849E00127A29 /* Headers */,
-				BFA90275202C849E00127A29 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFA9026A202C849E00127A29 /* PBXTargetDependency */,
-			);
-			name = LimeUI_Wizard;
-			productName = LimeUI;
-			productReference = BFA90279202C849E00127A29 /* LimeUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -386,18 +251,7 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Lime - HighTech Solutions";
 				TargetAttributes = {
-					BF0946D2202C5C5F002F76A6 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-					};
 					BFA90245202C843600127A29 = {
-						ProvisioningStyle = Automatic;
-					};
-					BFA90257202C849200127A29 = {
-						ProvisioningStyle = Automatic;
-					};
-					BFA90269202C849E00127A29 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -420,10 +274,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				BFA90245202C843600127A29 /* LimeUI_ALL */,
-				BF0946D2202C5C5F002F76A6 /* LimeUI_Base */,
-				BFA90257202C849200127A29 /* LimeUI_Embedding */,
-				BFA90269202C849E00127A29 /* LimeUI_Wizard */,
+				BFA90245202C843600127A29 /* LimeUI */,
 			);
 		};
 /* End PBXProject section */
@@ -446,28 +297,7 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BF0946D1202C5C5F002F76A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFA90251202C843600127A29 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA90263202C849200127A29 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA90275202C849E00127A29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,76 +307,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BF0946CE202C5C5F002F76A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA9028B202C8D3B00127A29 /* LimeImports.swift in Sources */,
-				BFA9027B202C852800127A29 /* BaseLocalizableViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BFA90248202C843600127A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA90299202C951C00127A29 /* CTAAlternativePageViewController.swift in Sources */,
 				BFA9027D202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift in Sources */,
 				BFA90291202C90F500127A29 /* EmbeddedControllerCrossfadeSegue.swift in Sources */,
 				BFA90281202C8B0700127A29 /* CrossfadeViewsTransition.swift in Sources */,
 				BFA9028F202C90C200127A29 /* EmbeddedControllerSwitchSegue.swift in Sources */,
 				BFA9027F202C8AD400127A29 /* InstantSwitchViewsTransition.swift in Sources */,
 				BFA9024B202C843600127A29 /* EmbeddingViewController.swift in Sources */,
+				BFA9029A202C951C00127A29 /* CTAWizardPageViewController.swift in Sources */,
+				BFA9029C202C951C00127A29 /* WizardViewController.swift in Sources */,
 				BFA90288202C8C9400127A29 /* ChangeEmbeddedControllerSegue.swift in Sources */,
 				BFA9028A202C8D1A00127A29 /* LimeImports.swift in Sources */,
+				BFA9029B202C951C00127A29 /* WizardPageViewController.swift in Sources */,
 				BFA9024C202C843600127A29 /* BaseLocalizableViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA9025A202C849200127A29 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA9028C202C8D3E00127A29 /* LimeImports.swift in Sources */,
-				BFA90284202C8C6C00127A29 /* EmbeddedViewsBaseTransition.swift in Sources */,
-				BFA90293202C910C00127A29 /* EmbeddedControllerCrossfadeSegue.swift in Sources */,
-				BFA90285202C8C6F00127A29 /* InstantSwitchViewsTransition.swift in Sources */,
-				BFA9025D202C849200127A29 /* EmbeddingViewController.swift in Sources */,
-				BFA90286202C8C7300127A29 /* CrossfadeViewsTransition.swift in Sources */,
-				BFA90292202C910C00127A29 /* EmbeddedControllerSwitchSegue.swift in Sources */,
-				BFA90294202C910C00127A29 /* ChangeEmbeddedControllerSegue.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFA9026C202C849E00127A29 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFA9028D202C906600127A29 /* LimeImports.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BF094701202C612D002F76A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LimeLocalization iOS";
-			targetProxy = BF094700202C612D002F76A6 /* PBXContainerItemProxy */;
-		};
 		BFA90246202C843600127A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LimeLocalization iOS";
 			targetProxy = BFA90247202C843600127A29 /* PBXContainerItemProxy */;
-		};
-		BFA90258202C849200127A29 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LimeLocalization iOS";
-			targetProxy = BFA90259202C849200127A29 /* PBXContainerItemProxy */;
-		};
-		BFA9026A202C849E00127A29 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LimeLocalization iOS";
-			targetProxy = BFA9026B202C849E00127A29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -600,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -654,58 +441,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BF0946DC202C5C5F002F76A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = KTT9G859MR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeUI;
-				PRODUCT_NAME = LimeUI;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		BF0946DD202C5C5F002F76A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = KTT9G859MR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeUI;
-				PRODUCT_NAME = LimeUI;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -754,96 +496,6 @@
 			};
 			name = Release;
 		};
-		BFA90265202C849200127A29 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = KTT9G859MR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeUI;
-				PRODUCT_NAME = LimeUI;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		BFA90266202C849200127A29 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = KTT9G859MR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeUI;
-				PRODUCT_NAME = LimeUI;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		BFA90277202C849E00127A29 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = KTT9G859MR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeUI;
-				PRODUCT_NAME = LimeUI;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		BFA90278202C849E00127A29 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = KTT9G859MR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeUI;
-				PRODUCT_NAME = LimeUI;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -856,38 +508,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF0946DB202C5C5F002F76A6 /* Build configuration list for PBXNativeTarget "LimeUI_Base" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF0946DC202C5C5F002F76A6 /* Debug */,
-				BF0946DD202C5C5F002F76A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFA90252202C843600127A29 /* Build configuration list for PBXNativeTarget "LimeUI_ALL" */ = {
+		BFA90252202C843600127A29 /* Build configuration list for PBXNativeTarget "LimeUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFA90253202C843600127A29 /* Debug */,
 				BFA90254202C843600127A29 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFA90264202C849200127A29 /* Build configuration list for PBXNativeTarget "LimeUI_Embedding" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFA90265202C849200127A29 /* Debug */,
-				BFA90266202C849200127A29 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFA90276202C849E00127A29 /* Build configuration list for PBXNativeTarget "LimeUI_Wizard" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFA90277202C849E00127A29 /* Debug */,
-				BFA90278202C849E00127A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

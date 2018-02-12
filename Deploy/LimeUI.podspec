@@ -20,9 +20,16 @@ Pod::Spec.new do |s|
     sub.source_files = 'Source/Base/*.swift'
   end
   
-  # 'Embedding' subspec
+  # 'Embedding...' subspec
   s.subspec 'EmbeddingViewController' do |sub|
     sub.source_files = 'Source/EmbeddingViewController/*.swift'
+    sub.dependency 'LimeUI/Base'
   end
-
+  
+  # 'Wizard...' subspec
+  s.subspec 'WizardViewController' do |sub|
+    sub.source_files = 'Source/WizardViewController/*.swift'
+    sub.dependency 'LimeUI/Base'
+  end
+  
 end
