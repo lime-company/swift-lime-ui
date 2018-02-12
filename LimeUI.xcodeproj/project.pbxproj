@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8CF3FE203198A5002A6B6E /* WizardUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CF3FD203198A5002A6B6E /* WizardUIConfiguration.swift */; };
+		BF8CF40020319A7E002A6B6E /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CF3FF20319A7E002A6B6E /* UIColorExtensions.swift */; };
+		BF8CF40220319AC2002A6B6E /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CF40120319AC2002A6B6E /* UIUtilities.swift */; };
+		BF8CF40420319BB6002A6B6E /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8CF40320319BB6002A6B6E /* UILabelExtensions.swift */; };
 		BFA9024B202C843600127A29 /* EmbeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0946F1202C60C7002F76A6 /* EmbeddingViewController.swift */; };
 		BFA9024C202C843600127A29 /* BaseLocalizableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF094704202C61CC002F76A6 /* BaseLocalizableViewController.swift */; };
 		BFA9024E202C843600127A29 /* LimeLocalization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0946FD202C6120002F76A6 /* LimeLocalization.framework */; };
@@ -58,6 +62,10 @@
 		BF0946F6202C611F002F76A6 /* LimeLocalization.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LimeLocalization.xcodeproj; path = "Carthage/Checkouts/swift-lime-localization/LimeLocalization.xcodeproj"; sourceTree = "<group>"; };
 		BF094704202C61CC002F76A6 /* BaseLocalizableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalizableViewController.swift; sourceTree = "<group>"; };
 		BF8CF3F42031939E002A6B6E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		BF8CF3FD203198A5002A6B6E /* WizardUIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardUIConfiguration.swift; sourceTree = "<group>"; };
+		BF8CF3FF20319A7E002A6B6E /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		BF8CF40120319AC2002A6B6E /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
+		BF8CF40320319BB6002A6B6E /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		BFA90255202C843600127A29 /* LimeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA9027C202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedViewsBaseTransition.swift; sourceTree = "<group>"; };
 		BFA9027E202C8AD400127A29 /* InstantSwitchViewsTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantSwitchViewsTransition.swift; sourceTree = "<group>"; };
@@ -149,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				BF094704202C61CC002F76A6 /* BaseLocalizableViewController.swift */,
+				BF8CF3FF20319A7E002A6B6E /* UIColorExtensions.swift */,
+				BF8CF40120319AC2002A6B6E /* UIUtilities.swift */,
 				BFA90289202C8D1A00127A29 /* LimeImports.swift */,
 			);
 			path = Base;
@@ -161,6 +171,8 @@
 				BFA90296202C951B00127A29 /* CTAWizardPageViewController.swift */,
 				BFA90297202C951B00127A29 /* WizardPageViewController.swift */,
 				BFA90298202C951C00127A29 /* WizardViewController.swift */,
+				BF8CF3FD203198A5002A6B6E /* WizardUIConfiguration.swift */,
+				BF8CF40320319BB6002A6B6E /* UILabelExtensions.swift */,
 			);
 			path = WizardViewController;
 			sourceTree = "<group>";
@@ -312,13 +324,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA90299202C951C00127A29 /* CTAAlternativePageViewController.swift in Sources */,
+				BF8CF3FE203198A5002A6B6E /* WizardUIConfiguration.swift in Sources */,
 				BFA9027D202C8A6600127A29 /* EmbeddedViewsBaseTransition.swift in Sources */,
 				BFA90291202C90F500127A29 /* EmbeddedControllerCrossfadeSegue.swift in Sources */,
+				BF8CF40420319BB6002A6B6E /* UILabelExtensions.swift in Sources */,
 				BFA90281202C8B0700127A29 /* CrossfadeViewsTransition.swift in Sources */,
 				BFA9028F202C90C200127A29 /* EmbeddedControllerSwitchSegue.swift in Sources */,
+				BF8CF40220319AC2002A6B6E /* UIUtilities.swift in Sources */,
 				BFA9027F202C8AD400127A29 /* InstantSwitchViewsTransition.swift in Sources */,
 				BFA9024B202C843600127A29 /* EmbeddingViewController.swift in Sources */,
 				BFA9029A202C951C00127A29 /* CTAWizardPageViewController.swift in Sources */,
+				BF8CF40020319A7E002A6B6E /* UIColorExtensions.swift in Sources */,
 				BFA9029C202C951C00127A29 /* WizardViewController.swift in Sources */,
 				BFA90288202C8C9400127A29 /* ChangeEmbeddedControllerSegue.swift in Sources */,
 				BFA9028A202C8D1A00127A29 /* LimeImports.swift in Sources */,
